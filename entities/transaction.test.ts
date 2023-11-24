@@ -7,7 +7,7 @@ describe('Transaction', () => {
     const transaction = new Transaction(1, 500, 'Deposit');
   
     expect(transaction.toString()).toBe(
-      `Account Number: 1 | Amount: 500 | Date: ${date} | Operation: Deposit`,
+      `Account Number: 1 | Amount: 500 | Date: 01/02/2020, 00:00:00 | Operation: Deposit`,
     );
     
     spy.mockRestore();

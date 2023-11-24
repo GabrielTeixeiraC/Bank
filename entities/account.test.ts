@@ -32,7 +32,7 @@ describe("BankAccount", () => {
     account.deposit(500);
     account.withdraw(200);
 
-    expect(account.getStatement()).toEqual("Account Number: 1 | Amount: 500 | Date: Sat Feb 01 2020 00:00:00 GMT-0300 (Brasilia Standard Time) | Operation: Deposit\nAccount Number: 1 | Amount: 200 | Date: Sat Feb 01 2020 00:00:00 GMT-0300 (Brasilia Standard Time) | Operation: Withdrawal\n");
+    expect(account.getStatement()).toEqual("Account Number: 1 | Amount: 500 | Date: 01/02/2020, 00:00:00 | Operation: Deposit\nAccount Number: 1 | Amount: 200 | Date: 01/02/2020, 00:00:00 | Operation: Withdrawal\n");
 
     spy.mockRestore();
   });
